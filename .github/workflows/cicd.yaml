@@ -36,7 +36,7 @@ jobs:
         run: |
          mvn sonar:sonar \
          -Dsonar.projectKey=train-ticket-reservation \
-         -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
+         -Dsonar.host.url=${{ secrets.SONAR_HOST }} \
          -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
       - name: Configure Maven settings.xml for Nexus
