@@ -39,7 +39,6 @@ jobs:
          -Dsonar.host.url=${{ secrets.SONAR_HOST }} \
          -Dsonar.login=${{ secrets.SONAR_TOKEN }}
          name: Configure Maven settings.xml for Nexus
-        run: |
           mkdir -p ~/.m2
           cat <<EOF > ~/.m2/settings.xml
           <settings>
